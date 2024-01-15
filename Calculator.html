@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <style>
+    body{
+      background-color: black;
+      
+      
+    }
+    .result{
+      color: black;
+      background-color :lightgray ;
+      height: 20px;
+      width: 108px;
+      font-family: initial;
+    }
+    .number{
+      background-color: orange;
+      font-weight: bold;
+    }
+    .num{
+      background-color: transparent;
+      color: ghostwhite;
+      font-weight: bold;
+    }
+    .change{
+      background-color: dimgrey;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  
+  
+  <p class="result"></p>
+  <p></p>
+  
+  <button class="num"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '1';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+  ">
+    1
+  </button>
+  
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '2';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    2
+  </button>
+  
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '3';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    3
+  </button>
+  
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+     }
+    else{
+    calculation += '+';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    +
+  </button>
+  <p>
+
+  </p>
+
+  <button  class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '4';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    4
+  </button>
+  
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+     }
+    else{
+    calculation += '5';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    5
+  </button>
+  
+  <button class="num"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '6';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    6
+  </button>
+  
+  <button class="number" onclick= "
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '*';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    x
+  </button>
+
+  <p>
+
+  </p>
+
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+     calculation += '7';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    7
+  </button>
+  
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '8';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    8
+  </button>
+  
+  <button class="num"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '9';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    9
+  </button>
+  
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '-';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    -
+  </button>
+
+  <p>
+
+  </p>
+
+  <button class="num" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '0';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+   
+  ">
+    0
+  </button>
+  
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '/';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    /
+  </button>
+
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '**';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    ^
+  </button>
+  
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '.';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    .
+  </button>
+
+  <button class="number"  onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation += '/100';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    %
+  </button>
+  <p>
+    
+  </p>
+  
+  <button class="reset change" onclick="
+    if (document.querySelector('.reset').innerText === 'ON'){
+        document.querySelector('.reset').innerHTML = 'OFF';
+        calculation ='';
+       }
+   else if(document.querySelector('.reset').innerText === 'OFF'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+      }
+      document.querySelector('.result').innerHTML = calculation;
+   ">
+    ON
+  </button>
+
+  <button class="number" onclick= "
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation = eval(calculation);
+    }
+    document.querySelector('.result').innerHTML = calculation;
+    
+  ">
+    =
+  </button>
+  <button class="change" onclick="
+    if(document.querySelector('.reset').innerText === 'ON'){
+      document.querySelector('.reset').innerHTML = 'ON';
+      calculation ='';
+    }
+    else{
+    calculation = '';
+    }
+    document.querySelector('.result').innerHTML = calculation;
+  
+  ">Clear</button>
+  
+<script>
+   
+  let calculation = '';
+  
+</script>
+  
+  </body>
+</html>

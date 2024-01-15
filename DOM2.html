@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM2</title>
+</head>
+<body>
+  <style>
+    body{
+      background-color: lightgreen;
+      
+    }
+  </style>
+  <button>9a</button>
+  <button class="button2">9b</button>
+
+  <p></p>
+
+  <button onclick="
+    document.querySelector('.next').innerHTML = `You chose : Heads`
+  ">Heads</button>
+  
+  <button onclick="
+    document.querySelector('.next').innerHTML = `You chose : Tails`
+   ">Tails</button>
+    
+  <p class="next"></p>
+
+  <input class="name" placeholder="Name" onkeydown="
+    keyDown(event);
+  ">
+  <button onclick="
+    show();
+    ">Submit</button>
+  <p class="value"></p>
+
+
+  
+  <script>
+    console.log(document.querySelector('button'));
+    let display1 = document.querySelector('.button2').innerHTML = '9b done!';
+    console.log(display1);
+
+    
+
+    function show(){
+      let file = document.querySelector('.name').value;
+      document.querySelector('.value').innerHTML = `Your name is ${file}`;
+      
+    }
+
+    function keyDown(event){
+      if(event.key === 'Enter'){
+        show();
+      }
+    }
+
+
+
+  </script>
+</body>
+</html>

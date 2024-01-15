@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amazon Shopping Calculator</title>
+  <style>
+    body{
+      background-color: peru;
+      font-family: Arial;
+      font-weight:bold ;
+    }
+    .final_cost{
+      font-family: Arial;
+      font-weight: bold;
+    }
+    .calculate-button{
+      padding: 1px 20px;
+      background-color:  seagreen;
+      cursor: pointer;
+      
+    }
+  </style>
+</head>
+<body>
+  
+  <p>Amazon Shipping Calculator</p>
+
+  <p> If total cost of product is above $40 : Free Shipping</p>
+
+  <p> If total cost of  product is below $40 :  Add $10 for shipping</p>
+
+  <input class="cost" placeholder="Cost of product "
+  
+  onkeydown="
+    keydown(event);
+    ">
+  <button onclick="
+    calculateCost();
+  
+  " class="calculate-button">calculate</button>
+  
+  <p class="final_cost"></p>
+
+  <script>
+    
+    
+    function calculateCost(){
+      let cost = Number(document.querySelector('.cost').value);
+      
+      if(cost < 40 && cost > 0){
+        (cost += 10);
+        
+        document.querySelector('.final_cost').innerHTML = `Shipping cost is $${cost}`;
+      }
+      else if (cost <= 0){
+        document.querySelector('.final_cost').innerHTML = `Enter valid shipping cost`;
+        
+      }
+      else if (cost > 40){
+        document.querySelector('.final_cost').innerHTML = `Shipping cost is $${cost}`;
+      }
+    }
+    
+    function keydown(event){
+      if(event.key === 'Enter'){
+        calculateCost();
+      }
+    }
+
+
+  </script>
+  
+</body>
+</html>

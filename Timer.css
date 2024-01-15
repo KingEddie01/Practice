@@ -1,0 +1,18 @@
+#div1{
+    text-align: center;
+    
+}
+#timerLabel{
+    font-size: 200px;
+    font-style: calc();
+    
+}
+#ed{
+    text-align: center;
+    font-size: 50px;
+   font-style: normal;
+}
+body{
+    background-color: rgba(220, 20, 60, 0.508);
+    padding: auto;
+}

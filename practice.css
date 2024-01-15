@@ -1,0 +1,21 @@
+#mybutton{
+    margin-top: 10px;
+    background-color: green;
+    padding: none;
+    font-size: medium;
+}
+#buttonforc{
+    margin-top: 10px;
+    background-color: green;
+    padding: none;
+    font-size: medium;
+}
+#label4{
+    margin-bottom: 50px;
+}
+#countLabel{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+   
+}

@@ -1,0 +1,26 @@
+body{
+  background-color: black;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+.image{
+  height: 50px;
+}
+
+.move-button{
+background-color: transparent;
+border: 2px solid lightsalmon;
+height: 80px;
+width: 80px;
+border-radius: 40px;
+margin-right: 10px;
+cursor: pointer;
+}
+.reset{
+padding: 6px 10px;
+font-weight: bold;
+font-family: Arial;
+background-color: dimgrey;
+cursor: pointer;
+}
